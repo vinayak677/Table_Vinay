@@ -1,0 +1,47 @@
+body
+{
+    counter-reset: Serial;           /* Set the Serial counter to 0 */
+}
+
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: "" counter(Serial); /* Display the counter */
+}
+.Grand_total,.grand{
+    font-weight: 600;
+    
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #1e262e;
+}
+.bottom_line{
+    visibility: hidden;
+}
+.footer{
+    text-align: center;
+    background-color: rgb(0, 123, 255);
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage{
+  height: 610px;
+}
+.com{
+    color: rgb(0, 0, 0);
+}
+.p{
+    margin: 0;
+}
+.bg_blue{
+    background-color:  rgb(0, 123, 255);
+}
+.bg_grey{
+    background-color: #c0b9b9;
+}
+.head{
+    font-weight: 700;
+    font-size: larger;
+}
